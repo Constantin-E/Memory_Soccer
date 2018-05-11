@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Memory</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- other 1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="./Memory_Panini.css">
+</head>
+
+<body>
+    <div id="menu-bar">
+        <button type="button" class="new-game-option">New Game</button>
+        <button type="button" class="leaderboard-option">Leaderboard</button>
+        <span id="guesses"></span>
+    </div>
+    <div id="new-game-field" class="message">
+        <label>How many cards do you want to play with?</label>
+        <input id="requested-cards" type="number" name="quantity" min="2" max="36" step="2" value="12">
+        <button type="button" id="start-button">Start</button>
+    </div>
+    <div id="winning-message" class="message">
+        <label>Congratulations, you won!</label>
+        <button type="button" class="new-game-option">New Game</button>
+        <button type="button" class="leaderboard-option">Leaderboard</button>
+    </div>
+    <div id="leaderboard" class="message">
+        <label>Leaderboard</label>
+        <table id="leaderboard-table">
+        </table>
+        <button type="button" id="add-to-leaderboard">Add Game to Leaderboard</button>
+    </div>
+    <div id="play-board-container">
+    </div>
+    <!-- link to js file -->
+    <script src="./Memory_Panini.js"></script>
+</body>
+
+</html>
