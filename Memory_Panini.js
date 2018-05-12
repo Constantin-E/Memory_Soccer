@@ -96,7 +96,7 @@ function clearBoard() {
 function showNewGameField() {
     Memory.winningMessage.style.display = "none";
     Memory.guessesCounter = 0;
-    document.getElementById('guesses').innerHTML = "Current guesses: " + Memory.guessesCounter;
+    document.getElementById('guesses').innerHTML = "Wrong guesses: " + Memory.guessesCounter;
     Memory.newGameField.style.display = "block";
 }
 //***************************** LEADERBOARD ********************************
@@ -122,7 +122,7 @@ function showLeaderboard() {
     let th3 = document.createElement('th');
     let th4 = document.createElement('th');
     th1.innerHTML = "Game";
-    th2.innerHTML = "Guesses";
+    th2.innerHTML = "Wrong";
     th3.innerHTML = "Cards";
     th4.innerHTML = "Score";
     tr1.appendChild(th1);
@@ -257,7 +257,7 @@ function checkIfPair(event) {
 }
 function updateGuessesCounter() {
     Memory.guessesCounter += 1;
-    document.getElementById('guesses').innerHTML = "Current guesses: " + Memory.guessesCounter;
+    document.getElementById('guesses').innerHTML = "Wrong guesses: " + Memory.guessesCounter;
 }
 
 
