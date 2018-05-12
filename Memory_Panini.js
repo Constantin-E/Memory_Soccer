@@ -49,6 +49,7 @@ function feedingMemoryWithFoundationalInformation() {
         './Gallery/Brandt.png',
         './Gallery/Werner.png',
     ]
+    document.getElementById('requested-cards').max = Memory.allPhotos.length*2;
     Memory.startButton = document.getElementById('start-button');
     Memory.startButton.addEventListener('click', initializeGame);
     Memory.newGameButtonsArr = document.getElementsByClassName('new-game-option');
@@ -68,8 +69,8 @@ function initializeGame() {
     if (userNumber % 2 !== 0) {
         userNumber += 1;
     }
-    if (userNumber > 36) {
-        userNumber = 36;
+    if (userNumber > Memory.allPhotos.length*2) {
+        userNumber = Memory.allPhotos.length*2;
     }
     if (userNumber < 2) {
         userNumber = 2;
