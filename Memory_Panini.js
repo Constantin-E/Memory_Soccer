@@ -260,6 +260,3 @@ function updateGuessesCounter() {
     Memory.guessesCounter += 1;
     document.getElementById('guesses').innerHTML = "Wrong guesses: " + Memory.guessesCounter;
 }
-
-
-// find out about transition/ animation for flip that works on click/show
